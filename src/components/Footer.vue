@@ -2,20 +2,20 @@
     <div>
         <div class="footer-section">
             <div class="footer-showbox">
-                <h4>Class Total</h4>
-                <h4 data-val="2" class="footer-counter">0</h4>
+                <h5>Class Total</h5>
+                <h5 data-val="2" class="footer-counter">0</h5>
             </div>
             <div class="footer-showbox">
-                <h4>Class Students</h4>
-                <h4 data-val="197" class="footer-counter">0</h4>
+                <h5>Class Students</h5>
+                <h5 data-val="197" class="footer-counter">0</h5>
             </div>
             <div class="footer-showbox">
-                <h4>Big Projects</h4>
-                <h4 data-val="11" class="footer-counter">0</h4>
+                <h5>Big Projects</h5>
+                <h5 data-val="11" class="footer-counter">0</h5>
             </div>
             <div class="footer-showbox">
-                <h4>Small Projects</h4>
-                <h4 data-val="35" class="footer-counter">0</h4>
+                <h5>Small Projects</h5>
+                <h5 data-val="35" class="footer-counter">0</h5>
             </div>
         </div>
     </div>
@@ -59,16 +59,31 @@ export default {
 .footer-section {
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
     padding: 0 32px;
     background: linear-gradient(#111,#222);
     color: #ccc;
 
     .footer-showbox {
         display: flex;
+        width: 25%;
+        height: 128px;
         flex-direction: column;
         align-items: center;
         padding: 32px;
+        text-align: center;
     }
+}
+
+@media (max-width: 992px) {
+    .footer-section{
+
+        .footer-showbox{
+            width: 50%;
+        }
+    }
+    
 }
 </style>

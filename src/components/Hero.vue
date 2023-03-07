@@ -187,4 +187,11 @@ export default {
     padding: 64px 64px 16px;
   }
 }
+
+@media (max-width: 768px) {
+  .img-box{
+    height: 450px;
+  }
+  
+}
 </style>

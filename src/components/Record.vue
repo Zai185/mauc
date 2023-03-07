@@ -5,10 +5,10 @@
                 <img src="../img/img1.jpg" alt="">
             </div>
             <div class="text-box">
-                <div class="text-box-record heading">
+                <div class="text-box-record heading valid">
                     <h2>Take a look at our projects record</h2>
                 </div>
-                <div class="text-box-record projects">
+                <div class="text-box-record projects valid">
                     <h2>We have already finished<br>35 big projects</h2>
                     <img class="text-box-img one" id="record-one"
                         src="https://cdn.home-designing.com/wp-content/uploads/2018/08/modern-platform-bedroom-sets.jpg"
@@ -24,14 +24,14 @@
                     <h2>We have opened two classes</h2>
                     <div class="class-boxes">
                         <div class="class-box" id="class-one">
-                            <h3>First Class Name</h3>
+                            <h3>Hledan Class</h3>
                             <img src="https://www.buildingplanner.in/images/ready-plans/34N1001.jpg" alt="">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque et
                                 consequuntur
                                 perferendis ut numquam. Cupiditate unde cumque maiores nobis!</p>
                         </div>
                         <div class="class-box" id="class-two">
-                            <h3>First Class Name</h3>
+                            <h3>North Dagon Class</h3>
                             <img src="https://www.buildingplanner.in/images/ready-plans/34N1001.jpg" alt="">
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam doloremque et
                                 consequuntur
@@ -52,7 +52,7 @@ export default {
 
         onMounted(() => {
             const imgBox = document.getElementById('img-box-record')
-            const texts = document.querySelectorAll('.text-box-record')
+            const texts = document.querySelectorAll('.text-box-record.valid')
             const imgOne = document.getElementById('record-one')
             const imgTwo = document.getElementById('record-two')
             const imgThree = document.getElementById('record-three')
@@ -193,24 +193,32 @@ export default {
 
         .class {
             padding: 0 0 64px;
-
+            border: 1px solid black;
+            
             h2 {
                 font-size: 54px;
-                margin-bottom: 32px;
+                height: 20%;
             }
-
+            
             .class-boxes {
+                border: 1px solid red;
                 display: flex;
                 width: 100%;
+                height: 80%;
                 justify-content: space-between;
                 align-items: center;
 
+                h3 {
+                    font-size: 38px;
+                }
+
                 .class-box {
-                    width: 40%;
+                    width: 48%;
 
                     img {
-                        width: 90%;
-                        object-fit: cover;
+                        width: 320px;
+                        height: 320px;
+                        object-fit: contain;
                         object-position: center;
                     }
                 }
@@ -241,7 +249,7 @@ export default {
                 }
 
                 .class-boxes {
-                    padding: 0 92px;
+                    padding: 0 48px;
 
                     .class-box {
                         width: 50%;
@@ -253,6 +261,30 @@ export default {
                         img {
                             width: 80%;
                         }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .record-section {
+        height: calc(300vh + 700px);
+        .text-box {
+            .class {
+                padding: 24px 0;
+                height: calc(100vh + 360px);
+                h2{
+                    height: 10%;
+                }
+                .class-boxes {
+                    flex-wrap: wrap;
+
+                    .class-box {
+                        width: 100%;
+                        margin-bottom: 24px;
+                        
                     }
                 }
             }

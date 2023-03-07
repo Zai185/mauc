@@ -23,9 +23,7 @@
                 <router-link :to="{ name: 'Service' }">
                     <li>Service</li>
                 </router-link>
-                <!-- <div class="inner-contact">
-                    <i class="bi bi-telephone"></i><span>+959 954333511</span>
-                </div> -->
+                <!-- <git -->
 
             </ul>
 
@@ -199,8 +197,6 @@ ul {
         padding-right: 0;
     }
 
-    
-    
     ul {
         display: flex;
         flex-direction: column;
@@ -278,7 +274,7 @@ ul {
     }
 
     .contact {
-        width: 10%;
+        width: 98px;
         order: 2;
     }
 
@@ -287,7 +283,6 @@ ul {
     }
 
     .icon {
-        flex-wrap: wrap;
         margin: 0;
         padding: 0;
         align-items: flex-end;
@@ -296,7 +291,7 @@ ul {
 
     .icon i {
         text-align: center;
-        width: 50%;
+        width: 33%;
         margin: 0;
         padding: 0;
     }

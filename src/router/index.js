@@ -7,28 +7,28 @@ import Service from '../components/Service.vue'
 
 const routes = [
     {
-        path: '/',
-        redirect: '/home',
+        path: '/mauc/',
+        redirect: '/mauc/home',
         name: 'NavBar',
         component: NavBar,
         children:[
             {
-                path: 'home',
+                path: '/mauc/home',
                 name: 'Home',
                 component: Home
             },
             {
-                path: 'about',
+                path: '/mauc/about',
                 name: 'About',
                 component: About
             },
             {
-                path: 'course',
+                path: '/mauc/course',
                 name: 'Course',
                 component: Course
             },
             {
-                path: 'service',
+                path: '/mauc/service',
                 name: 'Service',
                 component: Service
             },

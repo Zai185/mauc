@@ -18,7 +18,7 @@
                         alt="">
                     <img class="text-box-img three" id="record-three"
                         src="https://images.pexels.com/photos/462235/pexels-photo-462235.jpeg?cs=srgb&dl=pexels-pixabay-462235.jpg&fm=jpg"
-                        alt=""> -->
+                        alt=""> -->photos
                 </div>
                 <div class="text-box-record class">
                     <h2>We have opened two classes</h2>

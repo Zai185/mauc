@@ -15,21 +15,21 @@
     <div class="catagory-box">
       <div class="catagory"
         @mouseover="opcOff(); imgId = 'https://i0.wp.com/blogs.autodesk.com/autocad/wp-content/uploads/sites/35/2020/06/Free-Web-App-Access-Feature-1536X830.jpg?fit=1536%2C830&ssl=1'"
-        @mouseleave="opcOffT(); imgId = '/src/img/img1.jpg'">
+        @mouseleave="opcOffT(); imgId = '../img/img1.jpg'">
         <i class="bi-brand bi-person"></i>
         <p>About</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab!</p>
       </div>
       <div class="catagory"
         @mouseover="opcOff(); imgId = 'https://www.thoughtco.com/thmb/EPqtQmH1RDavJxU3Iydmy_WO3v8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/teacher-giving-a-lecture-at-the-it-classroom-669775764-5c43f5edc9e77c00010c73e2.jpg'"
-        @mouseleave="opcOffT(); imgId = '/src/img/img1.jpg'">
+        @mouseleave="opcOffT(); imgId = '../img/img1.jpg'">
         <i class="bi-brand bi-book"></i>
         <p>Course</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, ab!</p>
       </div>
       <div class="catagory"
         @mouseover="opcOff(); imgId = 'https://i0.wp.com/blogs.autodesk.com/autocad/wp-content/uploads/sites/35/2020/06/Free-Web-App-Access-Feature-1536X830.jpg?fit=1536%2C830&ssl=1'"
-        @mouseleave="opcOffT(); imgId = '/src/img/img1.jpg'">
+        @mouseleave="opcOffT(); imgId = '../img/img1.jpg'">
 
 
         <i class="bi-brand bi bi-cash"></i>
